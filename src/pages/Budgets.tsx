@@ -124,7 +124,7 @@ export const Budgets: React.FC = () => {
       {budgetUsage.length > 0 && (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 p-5 rounded-3xl shadow-sm">
           {/* Total Budget Limit */}
-          <div className="p-4 bg-slate-50 dark:bg-slate-850/50 rounded-2xl">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl">
             <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
               <Wallet className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
               <span className="text-[11px] font-bold uppercase tracking-wider">Tổng ngân sách</span>
@@ -135,7 +135,7 @@ export const Budgets: React.FC = () => {
           </div>
 
           {/* Total Spent under budget */}
-          <div className="p-4 bg-slate-50 dark:bg-slate-850/50 rounded-2xl">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl">
             <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
               <TrendingDown className="w-4 h-4 text-rose-500 dark:text-rose-450" />
               <span className="text-[11px] font-bold uppercase tracking-wider">Tổng đã dùng</span>
@@ -146,7 +146,7 @@ export const Budgets: React.FC = () => {
           </div>
 
           {/* Remaining Budget */}
-          <div className="p-4 bg-slate-50 dark:bg-slate-850/50 rounded-2xl">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl">
             <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
               <Activity className="w-4 h-4 text-emerald-500 dark:text-emerald-400" />
               <span className="text-[11px] font-bold uppercase tracking-wider">Còn lại (an toàn)</span>
@@ -157,7 +157,7 @@ export const Budgets: React.FC = () => {
           </div>
 
           {/* Exceeded Categories count */}
-          <div className={`p-4 rounded-2xl ${totalExceededCategories > 0 ? 'bg-rose-50 dark:bg-rose-950/20 border border-rose-100/50 dark:border-rose-900/30' : 'bg-slate-50 dark:bg-slate-850/50'}`}>
+          <div className={`p-4 rounded-2xl ${totalExceededCategories > 0 ? 'bg-rose-50 dark:bg-rose-950/20 border border-rose-100/50 dark:border-rose-900/30' : 'bg-slate-50 dark:bg-slate-800/50'}`}>
             <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
               <AlertTriangle className={`w-4 h-4 ${totalExceededCategories > 0 ? 'text-rose-500' : 'text-slate-400'}`} />
               <span className="text-[11px] font-bold uppercase tracking-wider">Danh mục vượt hạn mức</span>
@@ -348,7 +348,7 @@ export const Budgets: React.FC = () => {
                   disabled={budgetUsage.some((b) => b.budget.category_id === selectedCategoryId)}
                   value={selectedCategoryId}
                   onChange={(e) => setSelectedCategoryId(e.target.value)}
-                  className="w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 text-slate-900 dark:text-white disabled:opacity-75"
+                  className="w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 text-slate-900 dark:text-white disabled:opacity-75"
                 >
                   <option value="" disabled>-- Chọn danh mục --</option>
                   {categories.map((cat) => (

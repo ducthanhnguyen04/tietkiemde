@@ -88,21 +88,21 @@ export const Profile: React.FC = () => {
         </h3>
 
         <div className="grid grid-cols-3 gap-4">
-          <div className="p-4 bg-slate-50 dark:bg-slate-850/50 rounded-2xl text-center">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl text-center">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Danh mục</p>
             <p className="text-2xl font-extrabold text-indigo-650 dark:text-indigo-400 mt-1">
               {categories.length}
             </p>
           </div>
 
-          <div className="p-4 bg-slate-50 dark:bg-slate-850/50 rounded-2xl text-center">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl text-center">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Giao dịch</p>
             <p className="text-2xl font-extrabold text-indigo-650 dark:text-indigo-400 mt-1">
               {transactions.length}
             </p>
           </div>
 
-          <div className="p-4 bg-slate-50 dark:bg-slate-850/50 rounded-2xl text-center">
+          <div className="p-4 bg-slate-50 dark:bg-slate-800/50 rounded-2xl text-center">
             <p className="text-[10px] font-bold text-slate-400 uppercase tracking-wider">Ngân sách</p>
             <p className="text-2xl font-extrabold text-indigo-650 dark:text-indigo-400 mt-1">
               {budgets.length}

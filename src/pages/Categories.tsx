@@ -225,7 +225,7 @@ export const Categories: React.FC = () => {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Ví dụ: Ăn vặt, Xăng dầu..."
-                  className="w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 text-slate-900 dark:text-white"
+                  className="w-full px-3 py-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 text-slate-900 dark:text-white"
                 />
               </div>
 
@@ -234,7 +234,7 @@ export const Categories: React.FC = () => {
                 <label className="block text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1.5 uppercase tracking-wider">
                   Biểu tượng ({selectedIcon})
                 </label>
-                <div className="grid grid-cols-6 gap-2 p-2.5 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-700 rounded-2xl max-h-36 overflow-y-auto scrollbar-none">
+                <div className="grid grid-cols-6 gap-2 p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl max-h-36 overflow-y-auto scrollbar-none">
                   {EMOJI_PRESETS.map((emoji) => (
                     <button
                       key={emoji}
@@ -255,7 +255,7 @@ export const Categories: React.FC = () => {
                 <label className="block text-[11px] font-semibold text-slate-600 dark:text-slate-400 mb-1.5 uppercase tracking-wider">
                   Bảng màu sắc
                 </label>
-                <div className="flex flex-wrap gap-2.5 p-2.5 bg-slate-50 dark:bg-slate-850 border border-slate-200 dark:border-slate-700 rounded-2xl">
+                <div className="flex flex-wrap gap-2.5 p-2.5 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl">
                   {COLOR_PRESETS.map((color) => (
                     <button
                       key={color}
